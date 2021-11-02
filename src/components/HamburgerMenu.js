@@ -8,7 +8,7 @@ const COLORS = {
 };
 
 const MenuLabel = styled.label`
-  background-color: ${COLORS.primaryLight};
+  background-color: 'black';
   position: fixed;
   top: 6rem;
   right: 6rem;
@@ -39,37 +39,31 @@ const NavBackground = styled.div`
 
 const Icon = styled.span`
   position: relative;
-  background-color: ${(props) => (props.clicked ? "transparent" : "black")};
+  background-color: ${(props) => (props.clicked ? "transparent" : "white")};
   width: 3rem;
   height: 2px;
   display: inline-block;
   margin-top: 3.5rem;
   transition: all 0.3s;
-
   &::before,
   &::after {
     content: "";
-    background-color: black;
+    background-color: white;
     width: 3rem;
     height: 2px;
     display: inline-block;
-
     position: absolute;
     left: 0;
     transition: all 0.3s;
   }
-
   &::before {
     top: ${(props) => (props.clicked ? "0" : "-0.8rem")};
     transform: ${(props) => (props.clicked ? "rotate(135deg)" : "rotate(0)")};
   }
-
   &::after {
     top: ${(props) => (props.clicked ? "0" : "0.8rem")};
-
     transform: ${(props) => (props.clicked ? "rotate(-135deg)" : "rotate(0)")};
   }
-
   ${MenuLabel}:hover &::before {
     top: ${(props) => (props.clicked ? "0" : "-1rem")};
   }
@@ -86,7 +80,6 @@ const Navigation = styled.nav`
   z-index: 600;
   width: ${(props) => (props.clicked ? "100%" : "0")};
   opacity: ${(props) => (props.clicked ? "1" : "0")};
-
   transition: width 0.8s, opacity 0.8s;
 `;
 
@@ -106,7 +99,6 @@ const ItemLink = styled(NavLink)`
   text-decoration: none;
   color: ${COLORS.primaryLight};
   padding: 1rem 2rem;
-
   background-image: linear-gradient(
     120deg,
     transparent 0%,
@@ -115,7 +107,6 @@ const ItemLink = styled(NavLink)`
   );
   background-size: 240%;
   transition: all 0.4s;
-
   &:hover,
   &:active {
     background-position: 100%;
