@@ -13,6 +13,7 @@ const Home = () =>{
         muted={mutable}
         playing={true}
         loop={true}
+        controls={true}
     />
    </div>
     
