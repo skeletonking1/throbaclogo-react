@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactPlayer from 'react-player/youtube'
 
 const Home = () =>{
-  const [mutable,setMutable] = useState(false);
   return(
    <div>
      <ReactPlayer
@@ -10,13 +9,13 @@ const Home = () =>{
         url='https://www.youtube.com/watch?v=ysz5S6PUM-U'
         width='100%'
         height='100%'
-        muted={mutable}
+        muted={true}
         playing={true}
+        autoPlay={true}
         loop={true}
         controls={true}
     />
    </div>
-    
   )
 }
 export default Home;
