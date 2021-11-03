@@ -1,20 +1,10 @@
 import React from 'react';
-import ReactPlayer from 'react-player/youtube'
+import video from '../../assests/ThrobacLogoFIN.mp4'
 
 const Home = () =>{
   return(
-   <div>
-     <ReactPlayer
-        className='react-player'
-        url='https://www.youtube.com/watch?v=ysz5S6PUM-U'
-        width='100%'
-        height='100%'
-        muted={true}
-        playing={true}
-        autoPlay={true}
-        loop={true}
-        controls={true}
-    />
+   <div className="container">
+    <video autoPlay playsInline controls={true} muted loop src={video} />
    </div>
   )
 }
