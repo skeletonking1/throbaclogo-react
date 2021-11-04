@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const COLORS = {
-  primaryDark: "#115b4c",
+  primaryDark: "#1284c7",
   primaryLight: "#B6EDC8",
 };
 
@@ -134,7 +134,7 @@ function HamburgerMenu() {
           </li>
           <li>
             <ItemLink onClick={handleClick} to="/contact">
-              Contact Us
+              Contact
             </ItemLink>
           </li>
         </List>

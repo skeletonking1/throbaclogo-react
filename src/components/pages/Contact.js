@@ -32,19 +32,23 @@ const Contact = () => {
       {Emails}
       <div className="row">
         <div className="col-sm-3">
-            <Link to={{ pathname:'https://twitter.com/ThrobacLabs?s=20'}} target="_blank"><i className="fab fa-twitter"></i>
+            <Link to={{ pathname:'https://twitter.com/ThrobacLabs?s=20'}} target="_blank">
+              <i className="fab fa-twitter" style={{color:"#B6EDC8"}}></i>
             </Link>
         </div>
         <div className="col-sm-3">
-            <Link to={{ pathname:'https://discord.gg/ZcEubdqk'}} target="_blank"><i className="fab fa-discord"></i>
+            <Link to={{ pathname:'https://discord.gg/ZcEubdqk'}} target="_blank">
+              <i className="fab fa-discord" style={{color:"#B6EDC8"}}></i>
             </Link>
         </div>
         <div className="col-sm-3">
-              <Link to={{ pathname:'https://github.com/Throbac-Labs'}} target="_blank"><i className="fab fa-github"></i>
+              <Link to={{ pathname:'https://github.com/Throbac-Labs'}} target="_blank">
+                <i className="fab fa-github" style={{color:"#B6EDC8"}}></i>
               </Link>
         </div>
         <div className="col-sm-3">
-            <Link to={{ pathname:'https://medium.com/@throbaclabs'}} target="_blank"><i className="fab fa-medium"></i>
+            <Link to={{ pathname:'https://medium.com/@throbaclabs'}} target="_blank">
+              <i className="fab fa-medium" style={{color:"#B6EDC8"}}></i>
             </Link>
         </div>
       </div>
