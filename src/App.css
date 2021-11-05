@@ -5,17 +5,7 @@ html {
 body {
   height: 100vh;
 
-  background: #050505;
-  background: -webkit-linear-gradient(
-    to right,
-    #030303,
-    #030303
-  ); 
-  background: linear-gradient(
-    to right,
-    #080808,
-    #070707
-  ); 
+  background: #000;
 
   color: #effe92;
 }

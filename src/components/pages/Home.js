@@ -12,7 +12,8 @@ const Home = () =>{
       <div className="text-center">
         <video autoPlay muted={mute} loop src={video} className="col-12 px-0" />
         <button type="button" 
-          className="btn btn-lg btn-primary" 
+          className="btn btn-lg btn-black" 
+          style={{color:'white'}}
           onClick={toggleMute}
         >{mute===true?'Unmute':'Mute'}</button>
       </div>
