@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const COLORS = {
-  primaryDark: "#1284c7",
+  primaryDark: "#007bff",
   primaryLight: "#B6EDC8",
 };
 
@@ -45,6 +45,7 @@ const Icon = styled.span`
   display: inline-block;
   margin-top: 3.5rem;
   transition: all 0.3s;
+
   &::before,
   &::after {
     content: "";
@@ -52,18 +53,23 @@ const Icon = styled.span`
     width: 3rem;
     height: 2px;
     display: inline-block;
+
     position: absolute;
     left: 0;
     transition: all 0.3s;
   }
+
   &::before {
     top: ${(props) => (props.clicked ? "0" : "-0.8rem")};
     transform: ${(props) => (props.clicked ? "rotate(135deg)" : "rotate(0)")};
   }
+
   &::after {
     top: ${(props) => (props.clicked ? "0" : "0.8rem")};
+
     transform: ${(props) => (props.clicked ? "rotate(-135deg)" : "rotate(0)")};
   }
+
   ${MenuLabel}:hover &::before {
     top: ${(props) => (props.clicked ? "0" : "-1rem")};
   }
@@ -80,6 +86,7 @@ const Navigation = styled.nav`
   z-index: 600;
   width: ${(props) => (props.clicked ? "100%" : "0")};
   opacity: ${(props) => (props.clicked ? "1" : "0")};
+
   transition: width 0.8s, opacity 0.8s;
 `;
 
@@ -99,6 +106,7 @@ const ItemLink = styled(NavLink)`
   text-decoration: none;
   color: ${COLORS.primaryLight};
   padding: 1rem 2rem;
+
   background-image: linear-gradient(
     120deg,
     transparent 0%,
@@ -107,6 +115,7 @@ const ItemLink = styled(NavLink)`
   );
   background-size: 240%;
   transition: all 0.4s;
+
   &:hover,
   &:active {
     background-position: 100%;
@@ -120,7 +129,7 @@ function HamburgerMenu() {
   const handleClick = () => setClick(!click);
   return (
     <>
-      <MenuLabel htmlFor="navi-toggle" onClick={handleClick}>
+      <MenuLabel htmlFor="navi-toggle" className="toggle-menu" onClick={handleClick}>
         <Icon clicked={click}>&nbsp;</Icon>
       </MenuLabel>
       <NavBackground clicked={click}>&nbsp;</NavBackground>

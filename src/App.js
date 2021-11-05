@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Router>
-        <HamburgerMenu />
+        <HamburgerMenu/>
         <div className="pages">
           <Switch>
             <Route exact path="/" component={Home} />

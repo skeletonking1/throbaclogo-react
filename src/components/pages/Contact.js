@@ -28,27 +28,27 @@ const Emails = table_data.map(ele => {
 })
 const Contact = () => {
   return (<>
-    <div>
+    <div className="container">
       {Emails}
       <div className="row">
-        <div className="col-sm-3">
+        <div className="col-3">
             <Link to={{ pathname:'https://twitter.com/ThrobacLabs?s=20'}} target="_blank">
-              <i className="fab fa-twitter" style={{color:"#B6EDC8"}}></i>
+              <i className="fab fa-twitter fa-5x" style={{color:"#1284c7"}}></i>
             </Link>
         </div>
-        <div className="col-sm-3">
+        <div className="col-3">
             <Link to={{ pathname:'https://discord.gg/ZcEubdqk'}} target="_blank">
-              <i className="fab fa-discord" style={{color:"#B6EDC8"}}></i>
+              <i className="fab fa-discord fa-5x" style={{color:"#1284c7"}}></i>
             </Link>
         </div>
-        <div className="col-sm-3">
+        <div className="col-3">
               <Link to={{ pathname:'https://github.com/Throbac-Labs'}} target="_blank">
-                <i className="fab fa-github" style={{color:"#B6EDC8"}}></i>
+                <i className="fab fa-github fa-5x" style={{color:"#1284c7"}}></i>
               </Link>
         </div>
-        <div className="col-sm-3">
+        <div className="col-3">
             <Link to={{ pathname:'https://medium.com/@throbaclabs'}} target="_blank">
-              <i className="fab fa-medium" style={{color:"#B6EDC8"}}></i>
+              <i className="fab fa-medium fa-5x" style={{color:"#1284c7"}}></i>
             </Link>
         </div>
       </div>
