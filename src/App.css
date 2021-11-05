@@ -39,6 +39,6 @@ body {
 
 .toggle-menu{
   position:fixed;
-  top: 0rem !important;
-  right: 2rem !important;
+  top: 1.5rem !important;
+  right: 1rem !important;
 }

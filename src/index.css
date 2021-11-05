@@ -16,4 +16,6 @@ code {
 }
 .container{
   margin-top: 8rem;
+  padding-left: 0;
+  padding-right: 0;
 }

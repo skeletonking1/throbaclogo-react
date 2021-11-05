@@ -19,6 +19,14 @@ const MenuLabel = styled.label`
   z-index: 1000;
   box-shadow: 0 1rem 3rem rgba(182, 237, 200, 0.3);
   text-align: center;
+  @media only screen and (max-width: 576px) {
+      width:4em;
+      height:4em;
+  }
+  @media only screen and (max-width: 992px) {
+     height:6em;
+     width:6em;
+  }
 `;
 
 const NavBackground = styled.div`
@@ -45,7 +53,14 @@ const Icon = styled.span`
   display: inline-block;
   margin-top: 3.5rem;
   transition: all 0.3s;
-
+  @media only screen and (max-width: 576px) {
+      width:3em;
+      margin-top:3em;
+  }
+  @media only screen and (max-width: 992px) {
+     width:3em;
+     margin-top:3em;
+  }
   &::before,
   &::after {
     content: "";
@@ -119,6 +134,7 @@ const ItemLink = styled(NavLink)`
   &:hover,
   &:active {
     background-position: 100%;
+    text-decoration:none;
     color: ${COLORS.primaryDark};
     transform: translateX(1rem);
   }
