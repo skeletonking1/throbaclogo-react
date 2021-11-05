@@ -9,7 +9,7 @@ const Contact = () => {
         target="_blank">
         team@throbaclabs.io
       </Link>
-      <div className="row">
+      <div className="row mt-20">
         <div className="col-3">
           <Link to={{ pathname: 'https://twitter.com/ThrobacLabs?s=20' }} target="_blank">
             <i className="fab fa-twitter fa-5x" style={{ color: "#1284c7" }}></i>
