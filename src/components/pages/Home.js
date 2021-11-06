@@ -10,7 +10,7 @@ const Home = () =>{
   return(
     <div className="container">
       <div className="text-center">
-        <video autoPlay muted={mute} loops src={video} className="col-12 px-0" />
+        <video autoPlay muted={mute} loop src={video} className="col-12 px-0" />
         <button type="button" 
           className="btn btn-lg btn-black mt-20" 
           style={{color:'white'}}
